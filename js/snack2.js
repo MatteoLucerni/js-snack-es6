@@ -46,11 +46,6 @@ const gradesOver70AndIdOver120 = students.filter(
 );
 console.table(gradesOver70AndIdOver120);
 
-const studentsNames = [];
-
-for (let student of students) {
-  const nome = student.name;
-  studentsNames.push(nome.toUpperCase());
-}
+const studentsNames = students.map((student) => student.name.toUpperCase());
 
 console.table(studentsNames);
