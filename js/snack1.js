@@ -12,14 +12,19 @@ const vips = [
   'Amal Clooney',
   'Maneskin',
 ];
-const placeholder = [];
+// const placeholder = [];
 
-for (let i = 0; i < vips.length; i++) {
-  placeholder.push({
-    table: 'Tavolo VIP',
-    name: vips[i],
-    place: 'Posto: ' + (i + 1),
-  });
-}
+// for (let i = 0; i < vips.length; i++) {
+//   placeholder.push({
+//     table: 'Tavolo VIP',
+//     name: vips[i],
+//     place: 'Posto: ' + (i + 1),
+//   });
+// }
 
+const placeholder = vips.map((vip, i) => ({
+  table: 'Tavolo VIP',
+  name: vip,
+  place: 'Posto: ' + (i + 1),
+}));
 console.table(placeholder);
