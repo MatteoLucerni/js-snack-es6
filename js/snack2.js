@@ -38,14 +38,14 @@ const students = [
   },
 ];
 
-const gradesOver70 = students.filter((student) => student.grades > 70);
+const gradesOver70 = students.filter(student => student.grades > 70);
 console.table(gradesOver70);
 
 const gradesOver70AndIdOver120 = students.filter(
-  (student) => student.grades > 70 && student.id > 120
+  student => student.grades > 70 && student.id > 120
 );
 console.table(gradesOver70AndIdOver120);
 
-const studentsNames = students.map((student) => student.name.toUpperCase());
+const studentsNames = students.map(student => student.name.toUpperCase());
 
 console.table(studentsNames);

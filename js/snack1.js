@@ -1,7 +1,5 @@
 console.log('JS 1 OK');
 
-const placeholderList = document.getElementById('gastby-list');
-
 const vips = [
   'Brad Pitt',
   'Johnny Depp',
@@ -25,7 +23,3 @@ for (let i = 0; i < vips.length; i++) {
 }
 
 console.table(placeholder);
-
-// Stampo in pagina
-
-placeholderList.innerText = placeholder;
