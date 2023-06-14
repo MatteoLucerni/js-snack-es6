@@ -29,13 +29,10 @@ const bikes = [
 ];
 
 const bikesWeights = bikes.map(bike => bike.weight);
-console.log(bikesWeights);
 
 const lowestWeight = Math.min(...bikesWeights);
-console.log(lowestWeight);
 
 const lowestWeightBike = bikes.filter(bike => bike.weight === lowestWeight);
-console.table(lowestWeightBike);
 
 console.log(
   `The lowest weight bike is the ${lowestWeightBike[0].name}, it weights ${lowestWeightBike[0].weight} kg`
