@@ -45,7 +45,7 @@ teams.forEach(team => {
   team['falli subiti'] = getRandomNumber(1, 20);
 
   //deconstrutto per stampare il nuovo array
-  let { nome, 'punti fatti': puntiFatti, 'falli subiti': falliSubiti } = team;
+  let { nome, 'falli subiti': falliSubiti } = team;
 
   teamRecivedFouls.push({
     nome,
