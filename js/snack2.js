@@ -1,3 +1,4 @@
+console.log('---------------------- SNACK 2 -----------------------');
 console.log('JS 2 OK');
 
 const students = [

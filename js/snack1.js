@@ -1,3 +1,4 @@
+console.log('---------------------- SNACK 1 -----------------------');
 console.log('JS 1 OK');
 
 const vips = [
